@@ -1,10 +1,11 @@
-# Importing Required Libraries
+#Importing Required Libraries
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 from rich import print
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn, TimeElapsedColumn
 from rich.console import Console
-import subprocess, os
+#import subprocess, os
+from gst_captcha import solve_captcha
 
 outputfolder = Path.home() / "Desktop"
 os.makedirs(outputfolder, exist_ok=True)
@@ -16,20 +17,21 @@ console = Console()
 username = input("Enter GST Username: ")
 password = input("Enter GST Password: ")
 
-def submit_captcha(page):
-    page.wait_for_timeout(1000)
-    captcha = page.locator("#imgCaptcha")
-    captcha.screenshot(path="captcha.png")
-
-    subprocess.run(["chafa", "-s", "150x50", "captcha.png"])
-    
-    captcha_text = input("Enter Captcha: ")
-    page.fill("#captcha", "")  
-    page.fill("#captcha", captcha_text)
-
-    page.wait_for_timeout(1000)
-    login_button = page.get_by_role("button", name="Login")
-    login_button.click()
+#def submit_captcha(page):
+#    page.wait_for_timeout(1000)
+#    captcha = page.locator("#imgCaptcha")
+#    captcha.screenshot(path="captcha.png")
+#
+#    subprocess.run(["chafa", "-s", "150x50", "captcha.png"])
+#    subprocess.run(["rm", "captcha.png"])
+#    
+#    captcha_text = input("Enter Captcha: ")
+#    page.fill("#captcha", "")  
+#    page.fill("#captcha", captcha_text)
+#
+#    page.wait_for_timeout(1000)
+#    login_button = page.get_by_role("button", name="Login")
+#    login_button.click()
 
 
 with sync_playwright() as p:
@@ -49,7 +51,7 @@ with sync_playwright() as p:
 
         page.fill("#user_pass", password)
 
-        submit_captcha(page)
+        solve_captcha(page)
 
         page.wait_for_timeout(2000)
         
