@@ -111,7 +111,7 @@ pip install -r requirements.txt
 Install Playwright browsers:
 
 ```bash
-playwright install
+playwright install chromium
 ```
 
 ---

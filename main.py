@@ -70,7 +70,7 @@ with sync_playwright() as p:
     print(f"[green]✓ Succesfully logged in[/green] ")
     Financial_Year = input("Enter FY Year of Returns:")
 
-    #page.get_by_text("Remind me later").click()
+    page.get_by_text("Remind me later").click()
     page.get_by_role("button", name="RETURN DASHBOARD").click()
 
     
