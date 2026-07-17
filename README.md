@@ -1,4 +1,15 @@
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
+[![Stars](https://img.shields.io/github/stars/SudhanFromGithub/gst_automation?style=flat-square)](https://github.com/SudhanFromGithub/gst_automation/stargazers)
+
 # 🚀 GST GSTR-1 Summary Automation
+
+</div>
+
+---
 
 Automate GST GSTR-1 summary PDF downloads using **Python + Playwright**.
 
