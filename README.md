@@ -5,6 +5,8 @@
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 [![Stars](https://img.shields.io/github/stars/SudhanFromGithub/gst_automation?style=flat-square)](https://github.com/SudhanFromGithub/gst_automation/stargazers)
 
+</div>
+
 # 🚀 GST GSTR-1 Summary Automation
 
 ---
