@@ -75,7 +75,7 @@ gst_automation/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/<username>/gst_automation.git
+git clone https://github.com/SudhanFromGithub/gst_automation.git
 
 cd gst_automation
 ```
@@ -171,52 +171,6 @@ Example:
 
 ---
 
-# 📅 Automated Processing
-
-The script processes all months:
-
-```
-Quarter 1
- ├── April
- ├── May
- └── June
-
-Quarter 2
- ├── July
- ├── August
- └── September
-
-Quarter 3
- ├── October
- ├── November
- └── December
-
-Quarter 4
- ├── January
- ├── February
- └── March
-```
-
-For every month the automation:
-
-1. Selects financial year
-2. Selects quarter
-3. Selects month
-4. Opens GSTR-1 return
-5. Opens summary page
-6. Generates PDF
-7. Saves the report
-
----
-
-# 📄 Output
-
-Downloaded files are saved automatically:
-
-```
-~/Desktop/
-```
-
 Example:
 
 ```
@@ -224,42 +178,6 @@ Example:
 2.GSTR1_Summary_May.pdf
 3.GSTR1_Summary_June.pdf
 ```
-
----
-
-# 🔐 Security Recommendations
-
-⚠️ Never store GST credentials directly inside the source code.
-
-Recommended:
-
-- Environment variables
-- Password managers
-- Secret management systems
-
-Example:
-
-```
-GST_USERNAME=username
-GST_PASSWORD=password
-```
-
----
-
-# 🧩 CAPTCHA Handling
-
-The project uses a separate CAPTCHA module:
-
-```python
-from gst_captcha import solve_captcha
-```
-
-The login flow:
-
-1. Captures CAPTCHA image
-2. Solves CAPTCHA
-3. Submits login
-4. Retries automatically if validation fails
 
 ---
 
@@ -275,64 +193,10 @@ playwright install
 
 ---
 
-## Login Failure
-
-Check:
-
-- GST username/password
-- Internet connection
-- CAPTCHA solver
-- GST portal availability
-
----
-
-## PDF Download Failure
-
-Verify:
-
-- Financial year exists
-- Return period is available
-- Browser session is active
-
----
-
 # 🚧 Future Improvements
 
-- [ ] Multiple GST account support
-- [ ] Secure credential storage
-- [ ] Excel report generation
-- [ ] Automatic monthly scheduling
-- [ ] GUI application
-- [ ] Better logging system
-- [ ] Cloud execution support
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-## Steps
-
-Create a branch:
-
-```bash
-git checkout -b feature/new-feature
-```
-
-Commit changes:
-
-```bash
-git commit -m "Add new feature"
-```
-
-Push:
-
-```bash
-git push origin feature/new-feature
-```
-
-Create a Pull Request.
+- [ ] GSTR-1 Nil Return Support 
+- [ ] Choose file location and better file naming
 
 ---
 

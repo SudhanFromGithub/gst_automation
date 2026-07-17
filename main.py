@@ -4,6 +4,7 @@ from pathlib import Path
 from rich import print
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn, TimeElapsedColumn
 from rich.console import Console
+import os
 #import subprocess, os
 from gst_captcha import solve_captcha
 
