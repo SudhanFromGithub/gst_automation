@@ -213,10 +213,11 @@ Users are responsible for:
 Use automation responsibly.
 
 ---
+---
 
 # 📜 License
 
-MIT License
+Distributed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
