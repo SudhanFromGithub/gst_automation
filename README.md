@@ -7,8 +7,6 @@
 
 # 🚀 GST GSTR-1 Summary Automation
 
-</div>
-
 ---
 
 Automate GST GSTR-1 summary PDF downloads using **Python + Playwright**.
