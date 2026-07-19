@@ -12,4 +12,7 @@ def solve_captcha(page):
 
     page.fill("#captcha", text)
 
+    page.locator("#captcha").click
+    page.keyboard.press("Tab")
+
     page.get_by_role("button", name="Login").click()
