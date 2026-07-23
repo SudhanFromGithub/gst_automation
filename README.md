@@ -211,6 +211,8 @@ playwright install
 
 - [ ] GSTR-1 Nil Return Support 
 - [ ] Choose file location and better file naming
+- [ ] GSTR-2B Support
+- [ ] GSTR-3B Support
 
 ---
 
